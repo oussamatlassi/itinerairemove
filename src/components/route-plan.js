@@ -93,7 +93,7 @@ var RoutePlan = React.createClass({
                 editingAt: -1
             });
         } else {
-            alert('Sorry. You need at least two destinations in here.');
+            alert('Tu as besoin d\'indiquer au moins 2 adresses');
         }
     },
     updateWayPoints: function () {

@@ -33,7 +33,7 @@ var EditWayPoint = React.createClass({
                 value: newValue
             });
         }else {
-            alert('Location is required');
+            alert('Une adresse est nécessaire amigo !');
             this.refs['wayPoint'].getDOMNode().focus();
         }
     },
