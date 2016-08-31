@@ -2112,7 +2112,7 @@ process.umask = function() { return 0; };
 		url += '&sensor=' + ((GoogleMapsLoader.SENSOR === true || GoogleMapsLoader.SENSOR === 'true') ? 'true' : 'false');
 
 		if (GoogleMapsLoader.KEY) {
-			url += '&key=AIzaSyCu7M56RfkyWvL55KPMUCzsnycFXJRMUgc' + GoogleMapsLoader.KEY;
+			url += '&key=' + GoogleMapsLoader.KEY;
 		}
 
 		if (GoogleMapsLoader.LIBRARIES.length > 0) {
@@ -2133,7 +2133,7 @@ process.umask = function() { return 0; };
 
 	GoogleMapsLoader.release = function(fn) {
 		var release = function() {
-			GoogleMapsLoader.KEY = 'AIzaSyCu7M56RfkyWvL55KPMUCzsnycFXJRMUgc';
+			GoogleMapsLoader.KEY = null;
 			GoogleMapsLoader.LIBRARIES = [];
 			GoogleMapsLoader.CLIENT = null;
 			GoogleMapsLoader.SENSOR = false;
