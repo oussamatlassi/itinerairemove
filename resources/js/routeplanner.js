@@ -2039,7 +2039,7 @@ process.umask = function() { return 0; };
 	var GoogleMapsLoader = {};
 
 
-	GoogleMapsLoader.URL = 'https://maps.googleapis.com/maps/api/js';
+	GoogleMapsLoader.URL = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBFzF4muAUeeKCAB1wCC-d0gEymuXW2a-I&callback=initMap';
 
 	GoogleMapsLoader.KEY = null;
 
