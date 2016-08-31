@@ -2109,7 +2109,7 @@ process.umask = function() { return 0; };
 
 		url += '?callback=' + GoogleMapsLoader.WINDOW_CALLBACK_NAME;
 
-		url += '&sensor=' + ((GoogleMapsLoader.SENSOR === true || GoogleMapsLoader.SENSOR === 'true') ? 'true' : 'false');
+		url += '&sensor=' + ((GoogleMapsLoader.SENSOR === false || GoogleMapsLoader.SENSOR === 'true') ? 'true' : 'false');
 
 		if (GoogleMapsLoader.KEY) {
 			url += '&key=' + GoogleMapsLoader.KEY;
