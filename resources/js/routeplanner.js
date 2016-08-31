@@ -2039,7 +2039,7 @@ process.umask = function() { return 0; };
 	var GoogleMapsLoader = {};
 
 
-	GoogleMapsLoader.URL = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBFzF4muAUeeKCAB1wCC-d0gEymuXW2a-I&callback=initMap';
+	GoogleMapsLoader.URL = 'https://maps.googleapis.com/maps/api/js';
 
 	GoogleMapsLoader.KEY = null;
 
@@ -2112,7 +2112,7 @@ process.umask = function() { return 0; };
 		url += '&sensor=' + ((GoogleMapsLoader.SENSOR === true || GoogleMapsLoader.SENSOR === 'true') ? 'true' : 'false');
 
 		if (GoogleMapsLoader.KEY) {
-			url += '&key=' + GoogleMapsLoader.KEY;
+			url += '&key=AIzaSyCu7M56RfkyWvL55KPMUCzsnycFXJRMUgc' + GoogleMapsLoader.KEY;
 		}
 
 		if (GoogleMapsLoader.LIBRARIES.length > 0) {
@@ -2133,7 +2133,7 @@ process.umask = function() { return 0; };
 
 	GoogleMapsLoader.release = function(fn) {
 		var release = function() {
-			GoogleMapsLoader.KEY = null;
+			GoogleMapsLoader.KEY = 'AIzaSyCu7M56RfkyWvL55KPMUCzsnycFXJRMUgc';
 			GoogleMapsLoader.LIBRARIES = [];
 			GoogleMapsLoader.CLIENT = null;
 			GoogleMapsLoader.SENSOR = false;
