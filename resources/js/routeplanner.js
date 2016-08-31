@@ -2133,7 +2133,7 @@ process.umask = function() { return 0; };
 
 	GoogleMapsLoader.release = function(fn) {
 		var release = function() {
-			GoogleMapsLoader.KEY = null;
+			GoogleMapsLoader.KEY = 'AIzaSyCu7M56RfkyWvL55KPMUCzsnycFXJRMUgc';
 			GoogleMapsLoader.LIBRARIES = [];
 			GoogleMapsLoader.CLIENT = null;
 			GoogleMapsLoader.SENSOR = false;
