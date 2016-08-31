@@ -2041,7 +2041,7 @@ process.umask = function() { return 0; };
 
 	GoogleMapsLoader.URL = 'https://maps.googleapis.com/maps/api/js';
 
-	GoogleMapsLoader.KEY = null;
+	GoogleMapsLoader.KEY = 'AIzaSyCu7M56RfkyWvL55KPMUCzsnycFXJRMUgc';
 
 	GoogleMapsLoader.LIBRARIES = [];
 
